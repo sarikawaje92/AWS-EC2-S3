@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>
+<form  id="upload" action="../upfile" method="POST" enctype=multipart/form-data>
+<h4>Select file to upload:</h4>
+<input type="file" name="fileup">
+<input type="submit"  value="upload" id="upload">
+</form>
+</div>
+
+<div>
+<form  id="retrieve" action="../downfile" method="post" enctype=multipart/form-data>
+<h4>Give file name to retrieve:</h4>
+<input type="text" name="filedown">
+<input type="submit"  value="retrieve" id="retrieve">
+</form>
+</div>
+
+<div>
+<form id="list" action="../list" method="post" enctype=multipart/form-data>
+<h4>List all files on service</h4>
+<input type="submit"  value="list" id="list">
+</form>
+</div>
+
+<div>
+<form  id="delete" action="../deletefile" method="post" enctype=multipart/form-data>
+<h4>Give file name to delete:</h4>
+<input type="text" name="filedelete">
+<input type="submit"  value="delete" id="retrieve">
+</form>
+</div>
+
+
+
+
+</body>
+</html>
